@@ -1,0 +1,136 @@
+@font-face{font-family:'Netflix Sans';font-weight:100;font-display:optional;src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')}@font-face{font-family:'Netflix Sans';font-weight:300;font-display:optional;src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')}@font-face{font-family:'Netflix Sans';font-weight:400;font-display:optional;src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')}@font-face{font-family:'Netflix Sans';font-weight:700;font-display:optional;src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')}@font-face{font-family:'Netflix Sans';font-weight:800;font-display:optional;src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')}@font-face{font-family:'Netflix Sans';font-weight:900;font-display:optional;src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')}
+
+:root{
+    --hsl-color: 40;
+    --radius: 10px;
+  }
+  div{
+      margin: 10px;
+  }
+
+  body{
+      font-family: 'Netflix Sans', sans-serif;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .excercise{
+      background-color: hsl(var(--hsl-color), 100%, 85%);
+      padding: 10px 15px;
+  }
+
+  .excercise-number{
+      font-weight: 900;
+  }
+
+  .tooltip{
+    background-color: hsl(var(--hsl-color), 100%, 80%);
+    padding: 5px 0px;
+    border: 2px solid hsl(var(--hsl-color), 100%, 50%);
+    border-radius: 0px var(--radius) var(--radius) var(--radius);
+  }
+
+  .tooltip-title{
+      background-color: hsl(var(--hsl-color), 100%, 50%);
+      padding: 5px;
+      font-weight: bold;
+  }
+
+  .tooltip-text{
+      margin: 20px;
+  }
+
+  h1{
+      border-left: 10px solid hsl(var(--hsl-color), 100%, 50%);
+      padding-left: 5px;
+  }
+
+  h2{
+    border-left: 7.5px solid hsl(var(--hsl-color), 100%, 60%);
+    padding-left: 7.5px;
+}
+
+h3{
+    border-left: 5px solid hsl(var(--hsl-color), 100%, 70%);
+    padding-left: 10px;
+}
+
+.experiment{
+    padding: 5px 0px;
+    border-left: 2px solid hsl(var(--hsl-color), 100%, 50%);
+    border-bottom: 2px solid hsl(var(--hsl-color), 100%, 50%);
+    border-radius: 0px var(--radius);
+}
+
+.experiment-title{
+    background-color: hsl(var(--hsl-color), 100%, 50%);
+      padding: 5px;
+      font-weight: bold;
+}
+
+.excercises{
+    padding: 10px 20px;
+    background-color: hsl(var(--hsl-color), 100%, 50%);
+    font-size: 1.2em;
+    border-bottom-right-radius: var(--radius);
+    margin-top: 30px;
+}
+
+.excercises-img{
+    width: 50px;
+    float: right;
+    transform: translateY(-30px) rotate(10deg);
+    background-color:hsl(var(--hsl-color), 100%, 50%);
+    padding: 5px;
+    border-radius: var(--radius);
+}
+
+.remember{
+    background-color:hsl(var(--hsl-color), 100%, 80%);
+    padding-bottom: 10px;
+}
+
+.remember-title{
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: hsl(var(--hsl-color), 100%, 50%);
+    font-size: 1.3em;
+    border-radius: 0px 0px var(--radius) var(--radius);
+}
+
+.remember-list-item{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.remember-list-item::before{
+    content: "";
+    border-left: 5px solid hsl(var(--hsl-color), 100%, 50%);
+    margin-right: 5px
+}
+
+.remember-list-item-title{
+    font-weight: bold;
+}
+
+.proporties{
+    background-color: hsl(var(--hsl-color), 100%, 80%);
+    padding: 10px 0px;
+}
+
+.proporties-title{
+    background-color: hsl(var(--hsl-color), 100%, 50%);
+    padding: 10px;
+    font-weight: bold;
+    border-bottom-right-radius: var(--radius);
+}
+
+.proporties-columns{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.proporties-columns-title{
+    font-weight: bold;
+}
